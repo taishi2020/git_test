@@ -7,7 +7,7 @@
 *.exe
 
 # Directory ".history"と、そのDirectory内の全files
-/.history/
+.history/
 
 # --------------------------------------------------
 # EOF
