@@ -164,7 +164,7 @@ void vector_test7(void){
 
     auto it_begin = v1.begin();
     auto it_end = v1.end();
-//    auto it;
+//    auto it;        // この行だけでは、型がvector<int>だと型を解決できないので、bugになる。
 
 	for (auto it = it_begin; it != it_end; ++it) {
 		cout << *it << endl;
