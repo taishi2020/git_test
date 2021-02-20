@@ -6,7 +6,7 @@
 // --------------------------------------------------
 #include <iostream>
 
-// using namespace std;
+using namespace std;
 
 // --------------------------------------------------
 // input    : void
@@ -15,7 +15,7 @@
 // --------------------------------------------------
 int main(void)
 {
-	std::cout << "hello! taishi !! (^o^)/" << std::endl;
+	cout << "hello! taishi !! (^o^)/" << endl;
 
 	return 0;
 }
