@@ -1,0 +1,27 @@
+' --------------------------------------------------
+' Function    : Class_Diagram2
+' Author      : T. TANAKA
+' Description : Class Diagramの基本要素
+'                   is-a and has-a
+' --------------------------------------------------
+
+@startuml
+
+title Class Diagram
+
+left to right direction
+
+' --------------------------------------------------
+' Category Definition
+' --------------------------------------------------
+interface i1
+class c1
+class c2
+
+' --------------------------------------------------
+' Category Connection
+' --------------------------------------------------
+i1 <|-- c1
+c1 *--> c2
+
+@enduml

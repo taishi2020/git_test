@@ -1,0 +1,44 @@
+' --------------------------------------------------
+' Function    : Class_Diagram
+' Author      : T. TANAKA
+' Description : Class Diagramの基本要素
+'                   is-a and has-a
+' --------------------------------------------------
+
+@startuml
+
+title Class Diagram
+
+' left to right direction
+
+' --------------------------------------------------
+' Category Definition
+' --------------------------------------------------
+interface i1
+
+class c1{
+    int age
+    string name
+
+    void set(int age)
+    int get(void)
+
+}
+
+class c2{
+    age : int
+    name : string
+}
+
+class c3
+class c4
+
+' --------------------------------------------------
+' Category Connection
+' --------------------------------------------------
+i1 <|-- c1
+c1 *--> c2 : call2
+c2 *--> c3 : call3
+c2 *--> c4
+
+@enduml

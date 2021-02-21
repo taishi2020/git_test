@@ -1,0 +1,53 @@
+' --------------------------------------------------
+' Function    : Class_Diagram3
+' Author      : T. TANAKA
+' Description : Class Diagramの基本要素
+'                   package
+'                   private and public
+'                   data member and member function
+'                   enum
+' --------------------------------------------------
+
+@startuml
+
+title Class Diagram
+
+' left to right direction
+
+' --------------------------------------------------
+' Category Definition
+' --------------------------------------------------
+package p1{
+    interface i1{
+        + hoge()
+        + fuga()
+    }
+
+    class c1{
+        - int age
+        - string name
+        + set(age, name)
+        + get()
+    }
+    class c2
+}
+
+enum e1{
+    value1
+    value2
+    value3
+}
+
+package p2{
+    class c3
+}
+
+' --------------------------------------------------
+' Category Connection
+' --------------------------------------------------
+i1 <|-- c1
+c1 *--> c2
+
+c2 ..>c3
+
+@enduml

@@ -1,0 +1,42 @@
+' --------------------------------------------------
+' Function    : Class_Diagram6
+' Author      : T. TANAKA
+' Description : Class Diagramの基本要素
+'               Linkの向きをright, left, up, downで指定する
+' --------------------------------------------------
+
+@startuml
+
+title Class Diagram
+
+' left to right direction
+
+' --------------------------------------------------
+' Category Definition
+' --------------------------------------------------
+package p1{
+    interface i1
+    class c1
+    class c2
+}
+
+enum e1{
+    value1
+    value2
+    value3
+}
+
+package p2{
+    class c3
+}
+
+' --------------------------------------------------
+' Category Connection
+' --------------------------------------------------
+i1 <|-right- c1
+c1 *-down-> c2
+
+c2 "0..*".up.> "1" c3
+c3 -left-> e1
+
+@enduml
