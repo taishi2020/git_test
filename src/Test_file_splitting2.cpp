@@ -8,7 +8,10 @@
 // --------------------------------------------------
 // Include Directive
 // --------------------------------------------------
+
+// <> : preprocessorが/usr/includeをsearchする
 #include <iostream>
+// "" : preprocessorがuserが作成したdirectoryをsearchする
 #include "Test_file_splitting2.h"
 
 // --------------------------------------------------
