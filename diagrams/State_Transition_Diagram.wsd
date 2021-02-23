@@ -1,0 +1,45 @@
+' --------------------------------------------------
+' Function    : State_Transition_Diagram
+' Author      : T. TANAKA
+' Description : State Transition Diagram の基本要素
+' --------------------------------------------------
+
+' --------------------------------------------------
+' ◆参考文献：
+' 状態遷移図の構文と機能.html
+' https://plantuml.com/ja/state-diagram
+' --------------------------------------------------
+
+@startuml
+
+title State Transition Diagram
+
+' left to right direction
+
+' --------------------------------------------------
+' Category Definition
+' --------------------------------------------------
+
+' --------------------------------------------------
+' Category Connection
+' --------------------------------------------------
+[*] --> State1
+State1 --> State2
+state State2{
+    [*] --> State2_11
+    State2_11 --> State2_12
+    State2_12 --> [*]
+
+    State2_11 : entry / turn on the right
+    State2_11 : do / drive the car
+    State2_11 : exit / turn off the right
+
+    --
+
+    [*] --> State2_21
+    State2_21 --> State2_21 : action a
+    State2_21 --> State2_22 : action b
+    State2_22 --> [*] : action c
+}
+
+@enduml
