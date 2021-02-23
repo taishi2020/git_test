@@ -1,0 +1,51 @@
+' --------------------------------------------------
+' Function    : Tree_Widget
+' Author      : T. TANAKA
+' Description : Tree Widgetの基本要素
+' --------------------------------------------------
+
+' --------------------------------------------------
+' ◆参考文献：
+' PlantUML Cheat Sheet - Qiita.html
+' https://qiita.com/ogomr/items/0b5c4de7f38fd1482a48
+' --------------------------------------------------
+
+@startuml
+salt
+
+title Tree Widget
+
+' left to right direction
+
+' --------------------------------------------------
+' Category Definition
+' --------------------------------------------------
+
+' --------------------------------------------------
+' Category Connection
+' --------------------------------------------------
+{
+  {T
+   + Japan
+   ++ Hokkaido
+   ++ Tohoku
+   +++ Miyagi
+   ++++ Sendai
+   ++ Kanto
+   +++ Tokyo
+   ++++ Shinjuku
+   ++ Tokai
+   +++ Aichi
+   ++++ Nagoya
+   ++ Shinnetsu
+   ++ Kinki
+   +++ Kyoto
+   +++ Osaka
+   ++ Chugoku
+   ++ Shikoku
+   ++ Kyusyu
+   +++ Fukuoka
+  }
+}
+
+@enduml

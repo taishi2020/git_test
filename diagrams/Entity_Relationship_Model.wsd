@@ -1,0 +1,37 @@
+' --------------------------------------------------
+' Function    : Entity_Relationship_Model
+' Author      : T. TANAKA
+' Description : Entity Relationship Modelの基本要素
+' --------------------------------------------------
+
+' --------------------------------------------------
+' ◆参考文献：
+' ER図の文法と機能.html
+' https://plantuml.com/ja/ie-diagram
+' --------------------------------------------------
+
+@startuml
+
+title Entity Relationship Model
+
+' left to right direction
+
+' --------------------------------------------------
+' Category Definition
+' --------------------------------------------------
+entity Entity01{
+  * id1
+  --
+  * name
+  age
+}
+
+' --------------------------------------------------
+' Category Connection
+' --------------------------------------------------
+Entity01 }|..|| Entity02
+Entity03 }o..o| Entity04
+Entity05 ||--o{ Entity06
+Entity07 |o--|| Entity08
+
+@enduml
