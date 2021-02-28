@@ -1,7 +1,7 @@
 // --------------------------------------------------
-// Function    : file_practice
+// Function    : file_operation_practice
 // Author      : T. TANAKA
-// Description : class plactice in C++
+// Description : file operation plactice in C++
 // --------------------------------------------------
 
 // --------------------------------------------------
@@ -20,8 +20,11 @@
 // --------------------------------------------------
 using std::cout;
 using std::endl;
+using std::cerr;
+using std::exit;
+using std::ofstream;
 
-using std::string;
+//using std::string;
 //using std::printf;
 //using std::vector;
 //using std::to_string;
@@ -35,14 +38,14 @@ using std::string;
 // main Function
 // --------------------------------------------------
 int main(void){
-    std::ofstream ofs("hello.txt");
+    ofstream ofs("file_test.txt");
 
     if (!ofs) {
-        std::cerr << "ファイルオープンに失敗" << endl;
-        std::exit(1);
+        cerr << "ファイルオープンに失敗" << endl;
+        exit(1);
     }
 
-    ofs << "Hello, World" << endl;
+    ofs << "Hello, file World 3 std" << endl;
 
     return 0;
 }
